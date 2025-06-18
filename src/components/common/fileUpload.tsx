@@ -49,12 +49,7 @@ export default function FileUploadBasic() {
     },
   });
 
-  const value = form.watch("files");
-  console.log("🚀 ~ FileUploadFormDemo ~ value:", value);
-
   const onSubmit = React.useCallback(async (data: FormValues) => {
-    console.log("🚀 ~ onSubmit ~ onSubmit:", onSubmit);
-
     const formData = new FormData();
 
     data.files.forEach((file) => {
@@ -75,7 +70,6 @@ export default function FileUploadBasic() {
     }
 
     const result = await response.json();
-    console.log("🚀 ~ onSubmit ~ result:", result);
 
     toast.success("Files uploaded successfully!");
   }, []);

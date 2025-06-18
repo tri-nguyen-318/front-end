@@ -1,5 +1,5 @@
 "use client";
-import { Image, Video } from "lucide-react";
+import { Container, Image, Video } from "lucide-react";
 
 import {
   Sidebar,
@@ -25,6 +25,11 @@ const items = [
     title: "Upload video",
     url: "/video",
     icon: Video,
+  },
+  {
+    title: "Assets",
+    url: "/asset",
+    icon: Container,
   },
 ];
 
